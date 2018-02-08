@@ -1,0 +1,28 @@
+{
+  "name": "com.stavl.cordova.plugin.brotherLabelPrinter",
+  "version": "0.0.1",
+  "description": "Cordova hooks for Brother Label Print SDK",
+  "cordova": {
+    "id": "com.stavl.cordova.plugin.brotherLabelPrinter",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stavell/cordova-plugin-brother-printer.git"
+  },
+  "keywords": [
+    "brother",
+    "sdk",
+    "print",
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "Stanislav Velchev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stavell/cordova-plugin-brother-printer/issues"
+  },
+  "homepage": "https://github.com/stavell/cordova-plugin-brother-printer#readme"
+}
