@@ -1,5 +1,5 @@
 {
-  "name": "com.stavl.cordova.plugin.brotherLabelPrinter",
+  "name": "cordova-plugin-brother-label-printer",
   "version": "0.0.1",
   "description": "Cordova hooks for Brother Label Print SDK",
   "cordova": {
