@@ -1,21 +1,33 @@
+cordova.define("com.stavl.cordova.plugin.brotherLabelPrinter.BrotherLabelPrinter", function(require, exports, module) {
 var BrotherLabelPrinter = function () {}
 BrotherLabelPrinter.prototype = {
 
     init: function (data, callback) {
-        cordova.exec(callbackFn, null, 'BrotherPrinter', 'init', [data]);
+        cordova.exec(callback, function(err){
+           if(callback) callback(null, err);
+           console.log('error: '+err)
+       }, 'BrotherLabelPrinter', 'init', [data]);
     },
 
     printBase64Image: function (data, callback) {
         if (!data || !data.length) {
-            console.log('No data passed in. Expects a bitmap.');
-            return
+            if(callback) callback(null, 'No data passed in. Expects a Base64 bitmap.')
+            return;
         }
-        cordova.exec(callback, function(err){console.log('error: '+err)}, 'BrotherLabelPrinter', 'printBase64Image', [data]);
+        cordova.exec(callback, function(err){
+            if(callback) callback(null, err);
+            console.log('error: '+err)
+        }, 'BrotherLabelPrinter', 'printBase64Image', [data]);
     },
 
-    getPrinterStatus: function(data, callback) {
-        cordova.exec(callback, function(err){console.log('error: '+err)}, 'BrotherLabelPrinter', 'getPrinterStatus', [data]);
+    getPrinterStatus: function(callback) {
+        cordova.exec(callback, function(err) {
+            console.log('error: '+err)
+            if(callback) callback(null, err);
+        }, 'BrotherLabelPrinter', 'getPrinterStatus', []);
     }
 }
 var plugin = new BrotherLabelPrinter();
 module.exports = plugin;
+
+});
