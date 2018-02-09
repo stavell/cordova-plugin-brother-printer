@@ -1,4 +1,3 @@
-cordova.define("com.stavl.cordova.plugin.brotherLabelPrinter.BrotherLabelPrinter", function(require, exports, module) {
 var BrotherLabelPrinter = function () {}
 BrotherLabelPrinter.prototype = {
 
@@ -29,5 +28,3 @@ BrotherLabelPrinter.prototype = {
 }
 var plugin = new BrotherLabelPrinter();
 module.exports = plugin;
-
-});
