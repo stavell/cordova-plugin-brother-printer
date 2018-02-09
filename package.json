@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Cordova hooks for Brother Label Print SDK",
   "cordova": {
-    "id": "com.stavl.cordova.plugin.brotherLabelPrinter",
+    "id": "cordova-plugin-brother-label-printer",
     "platforms": [
       "android"
     ]
@@ -19,6 +19,11 @@
     "ecosystem:cordova",
     "cordova-android"
   ],
+   "engines": {
+    "cordova": ">=3.6.0",
+    "cordova-android": ">=6.0.0",
+    "android-sdk": ">=21",
+  },
   "author": "Stanislav Velchev",
   "license": "ISC",
   "bugs": {
