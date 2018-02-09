@@ -22,7 +22,7 @@
    "engines": {
     "cordova": ">=3.6.0",
     "cordova-android": ">=6.0.0",
-    "android-sdk": ">=21",
+    "android-sdk": ">=21"
   },
   "author": "Stanislav Velchev",
   "license": "ISC",
