@@ -82,12 +82,7 @@ public class BrotherLabelPrinter extends CordovaPlugin {
             public void run() {
                 try {
                     String base64 = args.optString(0, null);
-                    JSONObject r = brotherLabelPrinter.printBase64Image(base64);
-
-                    JSONArray args = new JSONArray();
-                    args.put(r);
-
-                    PluginResult result = new PluginResult(PluginResult.Status.OK, args);
+                    PluginResult result = new PluginResult(PluginResult.Status.OK, brotherLabelPrinter.printBase64Image(base64));
                     callbackctx.sendPluginResult(result);
                 } catch (Exception e) {
                     PluginResult result = new PluginResult(PluginResult.Status.ERROR, e.getMessage());
